@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #72b4e4, #9b5cb7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+.reg-form h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  position: relative;
+}
+
+.reg-form h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(135deg, #72b4e4, #9b5cb7);
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #30cfd0;
+  outline: none;
+}
+
+.gender {
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.gender-options label {
+  font-size: 14px;
+}
+
+.reg-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg, #72b4e4, #9b5cb7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-gr {
+    width: 100%;
+  }
+
+  .form-gr input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .reg-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .gender-options {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .reg-form h2 {
+    font-size: 20px;
+  }
+
+  .reg-form h2::before {
+    width: 20px;
+  }
+}
